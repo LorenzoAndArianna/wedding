@@ -1,4 +1,6 @@
 :root {
-    /* --bg-image-url: url("../../images/bg_suggested.jpg")  */
-	--bg-image-url: url("../../images/overlay_flowers.jpg") 
+    --bg-image-url: url("../../images/vertical-left.png"); 
+	/* --bg-image-url: url("../../images/overlay_flowers.jpg")  */
+
+    --body-default-color: rgb(23, 15, 1);
 }

@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: var(--body-default-color);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1134,25 +1134,23 @@ input, select, textarea {
 		}
 
 		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
+			-moz-transition: background-color 0.5s ease-in-out;
+			-webkit-transition: background-color 0.5s ease-in-out;
+			-ms-transition: background-color 0.5s ease-in-out;
+			transition: background-color 0.5s ease-in-out;
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), var(--bg-image-url);
+			background-image: var(--bg-image-url);
 			/* background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay_flowers.jpg"); */
-			background-size: auto,
-1920px 1080px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
+			/* background-size: auto, 1080px 1920px; */
+			background-size: cover;
+			background-position: top 43% left;
+			background-repeat: no-repeat;
 			z-index: 2;
 		}
-
+		
 		#bg:after {
 			-moz-transform: scale(1.125);
 			-webkit-transform: scale(1.125);
@@ -1162,11 +1160,12 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: var(--bg-image-url);
+			/* background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), var(--bg-image-url); */
 			/* background-image: url("../../images/overlay_flowers.jpg"); */
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
+			/* background-position: center; */
+			/* background-size: cover; */
+			/* background-position: top, top; */
+			/* background-repeat: no-repeat; */
 			z-index: 1;
 		}
 
@@ -1183,7 +1182,7 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: var(--body-default-color);
 		}
 
 /* Wrapper */
@@ -1225,7 +1224,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 980px) {
 
 			#wrapper {
 				padding: 2rem 1rem;
@@ -1304,7 +1303,7 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
-			#header .logo .icon:before {
+		#header .logo .icon:before {
 				font-size: 2rem;
 			}
 
@@ -1316,30 +1315,30 @@ input, select, textarea {
 			max-width: 100%;
 		}
 
-			#header .content .inner {
-				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
-				padding: 3rem 2rem;
-				max-height: 40rem;
-				overflow: hidden;
+		#header .content .inner {
+			-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			-moz-transition-delay: 0.25s;
+			-webkit-transition-delay: 0.25s;
+			-ms-transition-delay: 0.25s;
+			transition-delay: 0.25s;
+			padding: 3rem 2rem;
+			max-height: 40rem;
+			overflow: hidden;
+		}
+
+		#header .content .inner > :last-child {
+			margin-bottom: 0;
 			}
 
-				#header .content .inner > :last-child {
-					margin-bottom: 0;
-				}
-
-			#header .content p {
-				text-transform: uppercase;
-				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
-				line-height: 2;
-			}
+		#header .content p {
+			text-transform: uppercase;
+			letter-spacing: 0.2rem;
+			font-size: 0.8rem;
+			line-height: 2;
+		}
 
 		#header nav ul {
 			display: -moz-flex;
@@ -1435,7 +1434,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1080px) {
 
 			#header > * {
 				margin-top: 2rem;
@@ -1466,7 +1465,8 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 1050px) {
+		/* @media screen and (max-width: 480px) { */
 
 			#header {
 				padding: 1.5rem 0;
@@ -1676,6 +1676,6 @@ input, select, textarea {
 
 	iframe.map {
 		width:100%; 
-		height:25rem; 
+		height:30rem; 
 		border:0;
 	}
