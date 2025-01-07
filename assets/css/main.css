@@ -1552,7 +1552,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(34, 30, 27, 0.95);
+			background-color: rgba(27, 31, 34, 0.95);
 			border-radius: 4px;
 			opacity: 0;
 		}

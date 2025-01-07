@@ -6,7 +6,7 @@ Martino Mogna aka [JhaatsHandcraft](https://github.com/JhaatsHandcraft) or [MMog
 
 ## Purpose
 This static website is developed as a tool to contain and share easily most of the informations about the wedding.
-this page is hosted using the github pages and can be found at [link](https://jhaatshandcraft.github.io/demosite) not using a custom domain.
+this page is hosted using the github pages and can be found at [link](https://lorenzoandarianna.github.io/wedding/) not using a custom domain.
 
 
 ## HTML5UP template
